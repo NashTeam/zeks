@@ -156,7 +156,7 @@ router.get('/cekapikey', async (req, res, next) => {
 res.send(JSON.parse(json))
 })
 // cecan
-router.get('/cecan/china', async (req, res, next) => {
+router.get('/api/cecan/china', async (req, res, next) => {
           var apikey = req.query.apikey
        	if(!apikey) return res.json(loghandler.apikey)
         if(listkey.includes(apikey)){
